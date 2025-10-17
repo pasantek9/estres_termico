@@ -1,0 +1,61 @@
+{
+  "indice_calor": {
+    "descripcion": "Matriz del Índice de Calor (Heat Index) por IMN. Los valores de la matriz son el Nivel de Riesgo (I, II, III, IV) que se obtiene al cruzar la Temperatura (°C) con la Humedad Relativa (%).",
+    "temperaturas": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42],
+    "humedad_relativa": [40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100],
+    "matriz_riesgo": [
+      ["I", "I", "I", "I", "I", "I", "I", "II", "II", "III", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["I", "I", "I", "I", "I", "I", "II", "II", "II", "III", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["I", "I", "I", "I", "I", "II", "II", "II", "III", "III", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["I", "I", "I", "I", "II", "II", "II", "III", "III", "IV", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["I", "I", "I", "II", "II", "II", "III", "III", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["I", "I", "II", "II", "II", "III", "III", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["I", "II", "II", "II", "III", "III", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["I", "II", "II", "III", "III", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["II", "II", "III", "III", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["II", "III", "III", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["II", "III", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["III", "III", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV"],
+      ["III", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV", "IV"]
+    ]
+  },
+  "riesgos": {
+    "I": {
+      "efectos": "Posible Fatiga física por exposiciones prolongadas y actividad física.",
+      "medidas": [
+        "Hidratación con agua potable.",
+        "Descanso en zonas de sombra.",
+        "Protección solar adecuada.",
+        "Capacitación y aclimatación."
+      ]
+    },
+    "II": {
+      "efectos": "Posible Insolación, calambres, agotamiento por exposiciones prolongadas y actividad física.",
+      "medidas": [
+        "Hidratación con agua potable y bebidas isotónicas.",
+        "Descanso frecuente en zonas de sombra.",
+        "Protección solar adecuada (ropa, gorra, bloqueador).",
+        "Capacitación y aclimatación rigurosa."
+      ]
+    },
+    "III": {
+      "efectos": "Probable Insolación, calambres, agotamiento por exposiciones prolongadas y actividad física.",
+      "medidas": [
+        "**Protocolo de Alto Riesgo:** Hidratación constante y supervisada.",
+        "Descanso obligatorio y frecuente bajo sombra.",
+        "Protección total contra la exposición solar.",
+        "Monitoreo constante del personal.",
+        "Reducción de la intensidad del trabajo."
+      ]
+    },
+    "IV": {
+      "efectos": "Probabilidad alta de insolación y golpe de calor (Emergencia Médica).",
+      "medidas": [
+        "**PELIGRO INMINENTE:** Suspender actividad física no esencial.",
+        "Aplicar el Protocolo de Alto Riesgo (Hidratación, Sombra, Descanso, Protección).",
+        "Asegurar la disponibilidad de asistencia médica inmediata.",
+        "Reubicar al personal a ambientes frescos o refrigerados."
+      ]
+    }
+  }
+}

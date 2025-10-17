@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para PC */
+}
+
+h1 {
+    text-align: center;
+    color: #e67e22;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #999;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* --- Formulario de Entrada --- */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* --- Sección de Resultados --- */
+.hidden {
+    display: none;
+}
+
+.result-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcf3cf;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 1px solid #f1c40f;
+}
+
+.risk-level {
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 50%;
+    color: white;
+}
+
+/* Colores para cada Nivel de Riesgo */
+.level-I { background-color: #2ecc71; } /* Verde */
+.level-II { background-color: #f1c40f; } /* Amarillo */
+.level-III { background-color: #e67e22; } /* Naranja */
+.level-IV { background-color: #e74c3c; } /* Rojo */
+
+#medidasRiesgo {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+#medidasRiesgo li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.download-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.download-options button {
+    background-color: #1abc9c;
+    width: 50%; /* Dos botones lado a lado */
+}
+
+.download-options button:hover {
+    background-color: #16a085;
+}
+
+/* Adaptación para móviles (pantallas pequeñas) */
+@media (max-width: 620px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .download-options {
+        flex-direction: column; /* Botones de descarga apilados */
+    }
+
+    .download-options button {
+        width: 100%;
+    }
+}

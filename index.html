@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Índice de Calor IMN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>☀️ Calculador de Riesgo por Calor</h1>
+        <p class="subtitle">Instituto Meteorológico Nacional (IMN)</p>
+
+        <section class="input-form">
+            <h2>Datos del Trabajador y Ambientales</h2>
+            <div class="input-group">
+                <label for="nombre">Nombre (Opcional):</label>
+                <input type="text" id="nombre" placeholder="Ej: Juan Pérez">
+            </div>
+            <div class="input-group">
+                <label for="bravo">BRAVO/Ubicación (Opcional):</label>
+                <input type="text" id="bravo" placeholder="Ej: Bravo 42">
+            </div>
+            <div class="input-group">
+                <label for="temperatura">Temperatura (°C):</label>
+                <input type="number" id="temperatura" min="1" max="50" placeholder="Ej: 32" required>
+            </div>
+            <div class="input-group">
+                <label for="humedad">Humedad Relativa (%):</label>
+                <input type="number" id="humedad" min="1" max="100" placeholder="Ej: 65" required>
+            </div>
+
+            <button id="calcularBtn">Calcular Nivel de Riesgo</button>
+        </section>
+
+        <section id="resultados" class="results-section hidden">
+            <h2>Resultado del Índice de Calor</h2>
+            <div class="result-box">
+                <p>Nivel de Riesgo:</p>
+                <p class="risk-level" id="nivelRiesgo"></p>
+            </div>
+            
+            <h3>Efectos en la Salud</h3>
+            <p id="efectosRiesgo"></p>
+
+            <h3>Medidas de Prevención y Protección</h3>
+            <ul id="medidasRiesgo">
+                </ul>
+
+            <div class="download-options">
+                <button id="descargarDOC">⬇️ Descargar Reporte (DOCX)</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    </body>
+</html>
